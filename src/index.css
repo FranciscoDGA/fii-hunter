@@ -4,20 +4,35 @@
   padding: 0;
 }
 
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   font-family: 'Sora', sans-serif;
-  background: #080c16;
-  color: #e2e8f0;
-  min-height: 100vh;
+  background: #07070e;
+  color: #dde0f0;
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
+  height: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #0f1629;
+  background: #0c0c18;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e2d4a;
+  background: #1a1a30;
   border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #28284a;
+}
+
+button {
+  transition: opacity 0.15s, background 0.15s;
+}
+button:hover {
+  opacity: 0.85;
 }
